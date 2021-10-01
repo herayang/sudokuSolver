@@ -3,7 +3,7 @@
 
  # Overview 
 
-This is a Sudoku solver that reads in a file of unsolved Sudoku puzzle, solves the puzzle using recursion, then prints it out. 
+This is a project where I take the Sudoku solver program I've written in Java to a newer version in C++. This sudoku solver reads the puzzle textfile, solves the puzzle using recursion, then saves the solution into a separate text file. 
 
 YouTube demonstration: 
 
