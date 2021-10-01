@@ -14,26 +14,21 @@ int main() {
 
 	//print out grid before solving
 	cout << "Unsolved Sudoku: \n";
-	for (int h = 0; h < 9; h++)
-	{
-		for (int w = 0; w < 9; w++)
-		{
-			cout << " " << grid[h][w] << " ";
-		}
-		cout << "\n";
-	}
+	s.printSudoku(grid);
+	//for (int h = 0; h < 9; h++)
+	//{
+	//	for (int w = 0; w < 9; w++)
+	//	{
+	//		cout << " " << grid[h][w] << " ";
+	//	}
+	//	cout << "\n";
+	//}
 	
 	//print out solved grid 
 	if (s.solveSudoku(grid) == true) {
 		cout << "After solving: \n";
-		for (int h = 0; h < 9; h++)
-		{
-			for (int w = 0; w < 9; w++)
-			{
-				cout << " " << grid[h][w] << " ";
-			}
-			cout << "\n";
-		}
+		s.printSudoku(grid);
+		s.saveSolution(grid);
 	}
 
 	//error message for when a puzzle couldn't be solved 
@@ -41,6 +36,5 @@ int main() {
 
 		cout << "Uh oh, I couldn't find the solution";
 	}
-	
 
 };

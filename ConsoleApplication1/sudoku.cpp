@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include<fstream>
+
 #include "Sudoku.h"
 using namespace std;
 
@@ -177,4 +178,40 @@ bool Sudoku::solveSudoku(int** board) {
 		}	
 	}
 	return false;
+}
+
+/**
+	Prints out the given sudoku board.
+*/
+void Sudoku::printSudoku(int** grid) {
+
+	for (int h = 0; h < 9; h++)
+	{
+		for (int w = 0; w < 9; w++)
+		{
+			cout << " " << grid[h][w] << " ";
+		}
+		cout << "\n";
+	}
+
+}
+
+/**
+	Saves the solved puzzle as a new text file called "solution."
+*/
+void Sudoku::saveSolution(int** grid) {
+
+	std::ofstream outfile("solution.txt");
+
+	for (int h = 0; h < 9; h++)
+	{
+		for (int w = 0; w < 9; w++)
+		{
+			outfile << " " << grid[h][w];
+		}
+		outfile << "\n";
+	}
+
+
+	outfile.close();
 }

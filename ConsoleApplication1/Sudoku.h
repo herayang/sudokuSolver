@@ -10,7 +10,8 @@ class Sudoku
 		bool isValidMove(int row, int col, int num, int** board);
 		
 		bool solveSudoku(int** board);
-		void printSudoku(); 
+		void printSudoku(int** board); 
+		void saveSolution(int** board);
 
 };
 
