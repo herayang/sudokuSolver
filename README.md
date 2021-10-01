@@ -7,7 +7,7 @@ This is a Sudoku solver that reads in a file of unsolved Sudoku puzzle, solves t
 
 YouTube demonstration: 
 
-[Software Demo Video](https://youtu.be/h3xvrZDiThU)
+[Software Demo Video](https://youtu.be/3Z45Zv3oPVQ)
 
 
 
